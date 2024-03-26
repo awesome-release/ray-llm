@@ -1,9 +1,9 @@
 service:
-  name: ray-llm
+  name: rayllm-head-svc
   externalPort: 8000
 ingress:
   hosts:
-    - ${RAY_HEAD_INGRESS_HOST}
+    - ${RAYLLM_HEAD_SVC_INGRESS_HOST}
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
