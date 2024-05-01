@@ -1,6 +1,6 @@
 service:
   name: rayllm-head-svc
-  externalPort: "10001"
+  externalPort: "8000"
 ingress:
   hosts:
     - "${FRONTEND_INGRESS_HOST}"
