@@ -20,6 +20,7 @@ spec:
         containers:
         - name: ray-head
           image: anyscale/ray-llm:latest
+          command: ["serve", "run", "~/serve_configs/amazon--LightGPT.yaml"]
           resources:
             limits:
               cpu: 2
